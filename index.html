@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Custom t-shirts, hoodies and hats in the Twin Cities. No minimum order, free mockup before you pay, and we clean up your artwork for you. Minneapolis and St. Paul.">
+<meta name="theme-color" content="#131315">
+<link rel="canonical" href="https://mpdesignlab.com/">
+
+<!-- Link previews (texts, Facebook, iMessage). Replace the URLs once the site is live. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MP Design Lab">
+<meta property="og:title" content="MP Design Lab — Custom shirts and hoodies, no minimum">
+<meta property="og:description" content="Twin Cities custom apparel. Bring a logo, a sketch, or a phone photo — we'll make it print-ready and put it on a shirt. No minimum order.">
+<meta property="og:url" content="https://mpdesignlab.com/">
+<!-- TODO: add a 1200x630 photo of your printed shirts and point this at it -->
+<meta property="og:image" content="https://mpdesignlab.com/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23131315'/%3E%3Ccircle cx='11' cy='11' r='4.6' fill='%2300A9E0'/%3E%3Ccircle cx='21' cy='11' r='4.6' fill='%23E5007E'/%3E%3Ccircle cx='11' cy='21' r='4.6' fill='%23FFC400'/%3E%3Ccircle cx='21' cy='21' r='4.6' fill='%23FFFFFF'/%3E%3C/svg%3E">
+
+<!-- Local SEO. Fill in the bracketed values; Google uses this for "custom t shirts near me". -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MP Design Lab",
+  "description": "Custom apparel printing in the Twin Cities. No minimum order, free mockups, artwork cleanup included.",
+  "url": "https://mpdesignlab.com/",
+  "telephone": "[PHONE]",
+  "email": "[EMAIL]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[STREET ADDRESS]",
+    "addressLocality": "[CITY]",
+    "addressRegion": "MN",
+    "postalCode": "[ZIP]",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Minneapolis" },
+    { "@type": "City", "name": "Saint Paul" }
+  ],
+  "priceRange": "$$"
+}
+</script>
+
+<style>
+  html{-webkit-text-size-adjust:100%}
+  img{max-width:100%;height:auto}
+  [hidden]{display:none!important}
+</style>
+<title>MP Design Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ink:#131315;
+    --ink-soft:#5A5C63;
+    --rule:#DEDFE3;
+    --rule-soft:#ECEDF0;
+    --paper:#FFFFFF;
+    --panel:#F2F3F6;
+    --accent:#0A46E4;
+    --accent-ink:#FFFFFF;
+    --accent-wash:#EDF1FE;
+    --c:#00A9E0;
+    --m:#E5007E;
+    --y:#FFC400;
+    --k:#131315;
+    --tbd-bg:#FFF3D6;
+    --tbd-line:#C98A00;
+    --tbd-text:#6B4A00;
+
+    --display:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --body:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+    --gutter:clamp(16px,5vw,48px);
+    --sec-pad:clamp(56px,8vw,104px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#F4F5F7;
+      --ink-soft:#9B9EA8;
+      --rule:#2C2F37;
+      --rule-soft:#212430;
+      --paper:#0E0F12;
+      --panel:#171A20;
+      --accent:#7FA0FF;
+      --accent-ink:#0E0F12;
+      --accent-wash:#182036;
+      --k:#F4F5F7;
+      --tbd-bg:#3A2E10;
+      --tbd-line:#D8A83A;
+      --tbd-text:#F2D99A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#F4F5F7;
+    --ink-soft:#9B9EA8;
+    --rule:#2C2F37;
+    --rule-soft:#212430;
+    --paper:#0E0F12;
+    --panel:#171A20;
+    --accent:#7FA0FF;
+    --accent-ink:#0E0F12;
+    --accent-wash:#182036;
+    --k:#F4F5F7;
+    --tbd-bg:#3A2E10;
+    --tbd-line:#D8A83A;
+    --tbd-text:#F2D99A;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1160px;margin-inline:auto;padding-inline:var(--gutter)}
+  a{color:inherit}
+  h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;margin:0}
+  p{margin:0}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+  /* ---- placeholder marker for facts the shop still has to supply ---- */
+  .tbd{
+    background:var(--tbd-bg);
+    color:var(--tbd-text);
+    border-bottom:1.5px dotted var(--tbd-line);
+    padding:0 .22em;
+    font-style:normal;
+    white-space:nowrap;
+  }
+
+  /* ---- CMYK dot motif ---- */
+  .dots{display:inline-flex;gap:4px;flex:none}
+  .dots i{width:7px;height:7px;border-radius:50%;display:block}
+  .dots i:nth-child(1){background:var(--c)}
+  .dots i:nth-child(2){background:var(--m)}
+  .dots i:nth-child(3){background:var(--y)}
+  .dots i:nth-child(4){background:var(--k)}
+
+  /* ---- header ---- */
+  .hdr{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
+    background:color-mix(in srgb,var(--paper) 88%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:1px solid var(--rule);
+  }
+  .hdr-in{display:flex;align-items:center;gap:20px;min-height:64px}
+  .mark{
+    font-family:var(--display);font-weight:900;font-size:15px;
+    letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+    display:flex;align-items:center;gap:10px;margin-right:auto;
+  }
+  .nav{display:flex;gap:26px;align-items:center}
+  .nav a{
+    font-family:var(--display);font-size:11.5px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;text-decoration:none;
+    color:var(--ink-soft);padding:6px 0;border-bottom:2px solid transparent;
+  }
+  .nav a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  @media (max-width:820px){.nav{display:none}}
+  .hdr-cta{
+    font-family:var(--display);font-size:11.5px;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;text-decoration:none;
+    background:var(--ink);color:var(--paper);padding:10px 16px;white-space:nowrap;
+  }
+  .hdr-cta:hover{background:var(--accent);color:var(--accent-ink)}
+
+  /* ---- hero: committed ink block, both themes ---- */
+  .hero{background:#131315;color:#FFFFFF}
+  .hero-in{
+    display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+    gap:clamp(32px,5vw,64px);align-items:center;
+    padding-block:clamp(48px,7vw,84px);
+  }
+  @media (max-width:880px){.hero-in{grid-template-columns:1fr;gap:36px}}
+  .eyebrow{
+    font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.2em;
+    text-transform:uppercase;color:#9A9DA6;display:flex;align-items:center;gap:12px;
+    margin-bottom:22px;
+  }
+  .hero h1{
+    font-size:clamp(38px,7.2vw,76px);font-weight:900;line-height:.95;
+    letter-spacing:-.03em;text-transform:uppercase;color:#fff;
+  }
+  .hero h1 em{font-style:normal;color:#7FA0FF}
+  .hero-sub{
+    margin-top:22px;max-width:46ch;font-size:clamp(16px,1.6vw,18.5px);
+    color:#C7C9D1;line-height:1.55;
+  }
+  .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn{
+    font-family:var(--display);font-size:12.5px;font-weight:700;letter-spacing:.13em;
+    text-transform:uppercase;text-decoration:none;display:inline-block;
+    padding:15px 26px;border:2px solid transparent;cursor:pointer;
+  }
+  .btn-a{background:#fff;color:#131315}
+  .btn-a:hover{background:#7FA0FF;color:#131315}
+  .btn-b{border-color:#4A4D57;color:#fff}
+  .btn-b:hover{border-color:#fff}
+
+  .promises{
+    border-top:1px solid #2A2C33;display:grid;
+    grid-template-columns:repeat(4,1fr);
+  }
+  @media (max-width:760px){.promises{grid-template-columns:repeat(2,1fr)}}
+  .promise{padding:22px 0;border-right:1px solid #2A2C33;padding-right:18px}
+  .promise:last-child{border-right:0}
+  @media (max-width:760px){
+    .promise:nth-child(2n){border-right:0}
+    .promise:nth-child(-n+2){border-bottom:1px solid #2A2C33}
+  }
+  .promise b{
+    display:block;font-family:var(--display);font-weight:800;font-size:14px;
+    letter-spacing:.02em;color:#fff;text-transform:uppercase;
+  }
+  .promise span{display:block;font-size:13.5px;color:#9A9DA6;margin-top:5px;line-height:1.45}
+
+  .spec{width:100%;height:auto;max-width:100%;display:block}
+
+  /* ---- generic section ---- */
+  .sec{padding-block:var(--sec-pad);border-top:1px solid var(--rule)}
+  .sec.alt{background:var(--panel)}
+  .sec-grid{display:grid;grid-template-columns:200px minmax(0,1fr);gap:clamp(24px,4vw,56px)}
+  @media (max-width:880px){.sec-grid{grid-template-columns:1fr;gap:20px}}
+  .rail{display:flex;flex-direction:column;gap:12px}
+  .rail-label{
+    font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--ink-soft);
+  }
+  .sec h2{
+    font-size:clamp(27px,3.8vw,42px);font-weight:800;line-height:1.04;
+    letter-spacing:-.02em;text-transform:uppercase;
+  }
+  .lede{margin-top:18px;max-width:62ch;font-size:17.5px;color:var(--ink-soft);line-height:1.6}
+  .lede strong{color:var(--ink);font-weight:600}
+
+  /* ---- artwork callout ---- */
+  .callout{
+    margin-top:30px;background:var(--accent-wash);border-left:4px solid var(--accent);
+    padding:24px 26px;max-width:66ch;
+  }
+  .callout h3{font-size:19px;font-weight:800;letter-spacing:-.01em}
+  .callout p{margin-top:9px;color:var(--ink-soft);font-size:16px}
+  .accepts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;list-style:none;padding:0}
+  .accepts li{
+    font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.1em;
+    text-transform:uppercase;border:1px solid var(--rule);background:var(--paper);
+    padding:6px 11px;color:var(--ink-soft);
+  }
+
+  /* ---- steps (a real sequence, so numbered) ---- */
+  .steps{margin-top:34px;display:grid;gap:0;counter-reset:s}
+  .step{
+    display:grid;grid-template-columns:64px minmax(0,1fr);gap:20px;
+    padding-block:24px;border-top:1px solid var(--rule);align-items:start;
+  }
+  .step:last-child{border-bottom:1px solid var(--rule)}
+  .step-n{
+    font-family:var(--display);font-size:32px;font-weight:900;line-height:1;
+    letter-spacing:-.04em;color:var(--accent);font-variant-numeric:tabular-nums;
+  }
+  .step h3{font-size:17px;font-weight:800;letter-spacing:.01em;text-transform:uppercase}
+  .step p{margin-top:6px;color:var(--ink-soft);max-width:58ch;font-size:15.5px}
+
+  /* ---- garment list ---- */
+  .goods{margin-top:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:var(--rule)}
+  .good{background:var(--paper);padding:22px 20px}
+  .sec.alt .good{background:var(--panel)}
+  .good h3{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+  .good p{margin-top:7px;font-size:14.5px;color:var(--ink-soft);line-height:1.5}
+
+  /* ---- pricing ---- */
+  .tablewrap{margin-top:30px;overflow-x:auto;border:1px solid var(--rule);background:var(--paper)}
+  .sec.alt .tablewrap{background:var(--panel)}
+  table{border-collapse:collapse;width:100%;min-width:470px}
+  th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--rule-soft);font-size:15.5px}
+  thead th{
+    font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-soft);border-bottom:1px solid var(--rule);
+  }
+  tbody td:first-child{font-weight:600}
+  td.num{font-variant-numeric:tabular-nums}
+  tbody tr:last-child td{border-bottom:0}
+  .pricenote{margin-top:16px;font-size:14.5px;color:var(--ink-soft);max-width:60ch}
+
+  /* ---- audience cards ---- */
+  .who{margin-top:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:22px}
+  .whocard{border-top:3px solid var(--ink);padding-top:18px}
+  .whocard:nth-child(1){border-top-color:var(--c)}
+  .whocard:nth-child(2){border-top-color:var(--m)}
+  .whocard:nth-child(3){border-top-color:var(--y)}
+  .whocard:nth-child(4){border-top-color:var(--accent)}
+  .whocard h3{font-size:15.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+  .whocard p{margin-top:8px;font-size:14.5px;color:var(--ink-soft);line-height:1.55}
+
+  /* ---- work gallery: honest empty slots ---- */
+  .shots{margin-top:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+  .shot{
+    aspect-ratio:4/5;max-width:100%;border:2px dashed var(--rule);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:8px;text-align:center;padding:18px;color:var(--ink-soft);
+  }
+  .shot b{
+    font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink);
+  }
+  .shot span{font-size:13px;line-height:1.45}
+
+  /* ---- deadline band ---- */
+  .band{background:var(--ink);color:var(--paper)}
+  .band .band-in{
+    padding-block:clamp(40px,6vw,64px);
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;
+  }
+  @media (max-width:780px){.band .band-in{grid-template-columns:1fr}}
+  .band h2{font-size:clamp(24px,3.4vw,36px);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;color:var(--paper)}
+  .band p{margin-top:12px;color:var(--ink-soft);max-width:54ch;font-size:16.5px}
+  .band .btn-a{background:var(--paper);color:var(--ink)}
+  .band .btn-a:hover{background:var(--accent);color:var(--accent-ink)}
+
+  /* ---- form ---- */
+  .form{margin-top:32px;max-width:680px}
+  .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:620px){.fgrid{grid-template-columns:1fr}}
+  .field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+  .field label{
+    font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-soft);
+  }
+  .field input,.field select,.field textarea{
+    font-family:var(--body);font-size:16px;color:var(--ink);background:var(--paper);
+    border:1px solid var(--rule);padding:12px 13px;width:100%;border-radius:0;
+  }
+  .sec.alt .field input,.sec.alt .field select,.sec.alt .field textarea{background:var(--paper)}
+  .field textarea{min-height:120px;resize:vertical}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-wash)}
+  .hint{font-size:13px;color:var(--ink-soft);margin-top:-4px}
+  .sent{
+    border:1px solid var(--accent);background:var(--accent-wash);padding:22px 24px;margin-top:8px;
+  }
+  .sent b{font-family:var(--display);font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;display:block}
+  .sent p{margin-top:8px;font-size:15px;color:var(--ink-soft)}
+
+  /* ---- about + footer ---- */
+  .about p{margin-top:18px;max-width:62ch;color:var(--ink-soft);font-size:17px;line-height:1.65}
+  .about p:first-of-type{color:var(--ink);font-size:18.5px}
+  .ftr{border-top:1px solid var(--rule);padding-block:40px;background:var(--panel)}
+  .ftr-in{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
+  .ftr-mark{font-family:var(--display);font-weight:900;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+  .ftr p{font-size:14px;color:var(--ink-soft);margin-top:10px;line-height:1.7}
+  .ftr a{color:var(--ink-soft)}
+  .ftr a:hover{color:var(--ink)}
+  .legal{font-size:12.5px;color:var(--ink-soft);margin-top:28px;padding-top:20px;border-top:1px solid var(--rule)}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  }
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="mark" href="#top">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      MP Design Lab
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#artwork">Artwork</a>
+      <a href="#print">What we print</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#work">Our work</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="hdr-cta" href="#quote">Free mockup</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-in">
+        <div>
+          <div class="eyebrow">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            Minneapolis &middot; St. Paul &middot; Twin Cities Metro
+          </div>
+          <h1>Custom shirts<br>and hoodies.<br><em>No minimum.</em></h1>
+          <p class="hero-sub">
+            Bring a logo, a sketch, or a photo off your phone. We'll turn it into
+            artwork that prints clean, put it on good blanks, and have it in your
+            hands in <span class="tbd">[X business days]</span>.
+          </p>
+          <div class="hero-btns">
+            <a class="btn btn-a" href="#quote">Get a free mockup</a>
+            <a class="btn btn-b" href="#pricing">See pricing</a>
+          </div>
+        </div>
+        <div>
+          <svg class="spec" viewBox="0 0 330 320" role="img" aria-label="Diagram of a t-shirt showing a 12 inch by 16 inch maximum front print area">
+            <g fill="none" stroke="#5A5C63" stroke-width="1.5">
+              <path d="M104 40 C124 33 142 29 162 29 C182 29 200 33 220 40 L288 78 L254 132 L232 112 L232 284 L92 284 L92 112 L70 132 L36 78 Z" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M104 40 C126 68 198 68 220 40" stroke="#FFFFFF" stroke-width="2.5"/>
+            </g>
+            <rect x="120" y="104" width="84" height="112" fill="none" stroke="#7FA0FF" stroke-width="1.5" stroke-dasharray="6 5"/>
+            <g>
+              <circle cx="139" cy="150" r="9" fill="#00A9E0"/>
+              <circle cx="155" cy="150" r="9" fill="#E5007E"/>
+              <circle cx="171" cy="150" r="9" fill="#FFC400"/>
+              <circle cx="187" cy="150" r="9" fill="#FFFFFF"/>
+              <text x="162" y="185" fill="#C7C9D1" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.4" text-anchor="middle">YOUR ART HERE</text>
+            </g>
+            <g stroke="#7FA0FF" stroke-width="1.2" fill="none">
+              <path d="M120 92 L204 92"/>
+              <path d="M120 88 L120 96"/>
+              <path d="M204 88 L204 96"/>
+              <path d="M216 104 L216 216"/>
+              <path d="M212 104 L220 104"/>
+              <path d="M212 216 L220 216"/>
+            </g>
+            <text x="162" y="82" fill="#7FA0FF" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">12&quot;</text>
+            <text x="228" y="164" fill="#7FA0FF" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700">16&quot;</text>
+            <text x="165" y="308" fill="#9A9DA6" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="2" text-anchor="middle">MAX FULL-FRONT PRINT AREA, ADULT</text>
+          </svg>
+        </div>
+      </div>
+      <div class="promises">
+        <div class="promise">
+          <b>No minimums</b>
+          <span>Order one shirt or two hundred. Same care either way.</span>
+        </div>
+        <div class="promise">
+          <b>Free mockup first</b>
+          <span>See it on the shirt before you pay anything.</span>
+        </div>
+        <div class="promise">
+          <b>We fix your file</b>
+          <span>Blurry logo, screenshot, napkin sketch — send it anyway.</span>
+        </div>
+        <div class="promise">
+          <b>Local pickup</b>
+          <span>Pick up in <span class="tbd">[neighborhood]</span> or we ship anywhere.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="artwork">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">Artwork</span>
+      </div>
+      <div>
+        <h2>Send us whatever you've got</h2>
+        <p class="lede">
+          Most shops ask you to upload a print-ready vector file. Most people don't
+          have one — they have a logo their cousin made in 2019, a screenshot with a
+          white box around it, or an idea they've never drawn. <strong>That's the
+          part we actually do.</strong>
+        </p>
+        <div class="callout">
+          <h3>That's the "Lab" in MP Design Lab</h3>
+          <p>
+            We'll clean up what you send, redraw it if it needs redrawing, pick type
+            that holds up at print size, and separate the colors. Then you get a
+            mockup on the actual shirt. Design work is included in the shirt price —
+            not a line item.
+          </p>
+          <ul class="accepts">
+            <li>Phone photo</li>
+            <li>Screenshot</li>
+            <li>Canva export</li>
+            <li>Napkin sketch</li>
+            <li>PNG / JPG</li>
+            <li>AI / EPS / SVG</li>
+            <li>Just an idea</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="print">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">What we print</span>
+      </div>
+      <div>
+        <h2>Good blanks, honest prints</h2>
+        <p class="lede">
+          We'd rather put your design on a shirt you'll keep wearing than hit a price
+          point with something scratchy. Tell us your budget and we'll show you the
+          range.
+        </p>
+        <div class="goods">
+          <div class="good">
+            <h3>T-shirts</h3>
+            <p>Cotton and tri-blend, youth through <span class="tbd">[largest size]</span>. Soft-style or heavyweight.</p>
+          </div>
+          <div class="good">
+            <h3>Hoodies &amp; crewnecks</h3>
+            <p>Mid and heavyweight fleece. The Minnesota workhorse from September on.</p>
+          </div>
+          <div class="good">
+            <h3>Hats</h3>
+            <p>Embroidered or printed patch. Dad hats, snapbacks, beanies.</p>
+          </div>
+          <div class="good">
+            <h3>Bags &amp; extras</h3>
+            <p>Totes, aprons, koozies. Good add-ons for events and vendor booths.</p>
+          </div>
+        </div>
+        <p class="pricenote">
+          <strong>Print methods:</strong> <span class="tbd">[DTF / DTG / screen print — list what you run]</span>.
+          Every print is pressed to spec so it survives the wash without cracking.
+          Wash cold, inside out, tumble low.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">How it works</span>
+      </div>
+      <div>
+        <h2>Four steps, no surprises</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-n">1</div>
+            <div>
+              <h3>Tell us what you need</h3>
+              <p>Quantity, garment, and the date you need it by. Send whatever artwork you have, or describe the idea.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">2</div>
+            <div>
+              <h3>We send a mockup and a price</h3>
+              <p>Usually within <span class="tbd">[X hours]</span>. Free, no deposit, no obligation. Want changes? Say so and we'll revise it.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">3</div>
+            <div>
+              <h3>You approve, we print</h3>
+              <p>Nothing goes on a shirt until you've signed off on the mockup. What you approve is what you get.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">4</div>
+            <div>
+              <h3>Pick up or ship</h3>
+              <p>Pick up in <span class="tbd">[neighborhood]</span>, or we ship anywhere in the U.S. Reorders are faster — your art stays on file.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="pricing">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">Pricing</span>
+      </div>
+      <div>
+        <h2>Priced per shirt. Nothing hidden.</h2>
+        <p class="lede">
+          No setup fees, no art fees, no minimum order. One-color or full-color, same
+          price. Prices below are for a standard front print.
+        </p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Quantity</th>
+                <th scope="col">T-shirt</th>
+                <th scope="col">Hoodie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1&ndash;5</td><td class="num"><span class="tbd">$00</span></td><td class="num"><span class="tbd">$00</span></td></tr>
+              <tr><td>6&ndash;11</td><td class="num"><span class="tbd">$00</span></td><td class="num"><span class="tbd">$00</span></td></tr>
+              <tr><td>12&ndash;23</td><td class="num"><span class="tbd">$00</span></td><td class="num"><span class="tbd">$00</span></td></tr>
+              <tr><td>24&ndash;49</td><td class="num"><span class="tbd">$00</span></td><td class="num"><span class="tbd">$00</span></td></tr>
+              <tr><td>50+</td><td class="num">Ask</td><td class="num">Ask</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pricenote">
+          Add <span class="tbd">$0</span> for a back or sleeve print, <span class="tbd">$0</span>
+          for 2XL and up. Rush orders available &mdash; ask.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="who">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">Who we print for</span>
+      </div>
+      <div>
+        <h2>The orders other shops turn down</h2>
+        <p class="lede">
+          A 24-piece minimum rules out most of the people who actually need shirts.
+          Those are our customers.
+        </p>
+        <div class="who">
+          <div class="whocard">
+            <h3>Crews &amp; small businesses</h3>
+            <p>Lawn care, detailing, cleaning, barbers, trainers, food trucks. Six shirts for you and the guys, reorder when someone new starts.</p>
+          </div>
+          <div class="whocard">
+            <h3>Reunions &amp; events</h3>
+            <p>Family reunions, bachelorette weekends, birthdays, memorial shirts, graduations. You've got a date — we work backward from it.</p>
+          </div>
+          <div class="whocard">
+            <h3>Teams &amp; leagues</h3>
+            <p>Softball, kickball, broomball, beer league. Twelve jerseys, team name on the chest, number on the back if you want it.</p>
+          </div>
+          <div class="whocard">
+            <h3>Creators &amp; small brands</h3>
+            <p>Bands, gyms, churches, taprooms, tattoo shops, side-hustle labels. Print a small run, see if it sells, come back for more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="work">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">Our work</span>
+      </div>
+      <div>
+        <h2>Print quality is the whole pitch</h2>
+        <p class="lede">
+          Drop in six to ten photos of shirts you've actually printed &mdash; on
+          people if you can get them, folded flat-lay if you can't. Close-ups of the
+          print beat styled product shots. This section sells more than any sentence
+          on this page.
+        </p>
+        <div class="shots">
+          <div class="shot"><b>Photo 1</b><span>A crew in their shirts, on the job</span></div>
+          <div class="shot"><b>Photo 2</b><span>Close-up of the print, ink texture visible</span></div>
+          <div class="shot"><b>Photo 3</b><span>A reunion or event group shot</span></div>
+          <div class="shot"><b>Photo 4</b><span>Hoodie, front and back</span></div>
+          <div class="shot"><b>Photo 5</b><span>Rough customer file beside the finished print</span></div>
+          <div class="shot"><b>Photo 6</b><span>Stack of a finished order, boxed up</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band-in">
+      <div>
+        <h2>Got a date? Say it up front.</h2>
+        <p>
+          Reunion Saturday. Tournament next weekend. Party Friday night. Tell us the
+          deadline in your first message and we'll tell you straight whether we can
+          hit it &mdash; before you've spent anything.
+        </p>
+      </div>
+      <a class="btn btn-a" href="#quote">Start a quote</a>
+    </div>
+  </section>
+
+  <section class="sec" id="quote">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">Free mockup</span>
+      </div>
+      <div>
+        <h2>Tell us about your shirts</h2>
+        <p class="lede">
+          Answer what you know and leave the rest blank. We'll come back with a
+          mockup and a price &mdash; free, and no deposit to see it.
+        </p>
+        <!-- TO MAKE THIS FORM WORK: replace the action below with a real form
+             endpoint (Formspree, Basin, Netlify Forms, your own mail script).
+             As soon as the placeholder text is gone, the form submits for real. -->
+        <form class="form" id="quoteForm"
+              action="PASTE-YOUR-FORM-ENDPOINT-HERE"
+              method="POST"
+              enctype="multipart/form-data"
+              novalidate>
+          <div class="fgrid">
+            <div class="field">
+              <label for="q-name">Your name</label>
+              <input id="q-name" name="name" type="text" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="q-email">Email</label>
+              <input id="q-email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="fgrid">
+            <div class="field">
+              <label for="q-phone">Phone (optional)</label>
+              <input id="q-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="q-date">Need it by</label>
+              <input id="q-date" name="needBy" type="date">
+            </div>
+          </div>
+          <div class="fgrid">
+            <div class="field">
+              <label for="q-item">What are we printing</label>
+              <select id="q-item" name="item">
+                <option>T-shirts</option>
+                <option>Hoodies or crewnecks</option>
+                <option>Hats</option>
+                <option>Totes or other</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="q-qty">About how many</label>
+              <select id="q-qty" name="qty">
+                <option>Just 1</option>
+                <option>2&ndash;5</option>
+                <option>6&ndash;11</option>
+                <option>12&ndash;23</option>
+                <option>24&ndash;49</option>
+                <option>50+</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="q-design">Tell us about the design</label>
+            <textarea id="q-design" name="design" placeholder="A logo we should use, colors, what it should say, or just the idea in your own words."></textarea>
+          </div>
+          <div class="field">
+            <label for="q-art">Artwork</label>
+            <input id="q-art" name="art" type="file" accept="image/*,.pdf,.ai,.eps,.svg" multiple>
+            <p class="hint">Anything you've got &mdash; a phone photo of the logo is fine. Don't have a file? Skip this.</p>
+          </div>
+          <button class="btn btn-a" type="submit" style="background:var(--ink);color:var(--paper)">Send it over</button>
+          <div class="sent" id="quoteSent" hidden>
+            <b>This form isn't connected yet</b>
+            <p>
+              Nothing was sent. Whoever sets this site up needs to put a real form
+              endpoint in the <code>action</code> attribute on the form &mdash; see the
+              comment just above it in the HTML. Until then, quote requests go nowhere.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt about" id="about">
+    <div class="wrap sec-grid">
+      <div class="rail">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="rail-label">About</span>
+      </div>
+      <div>
+        <h2>We started because nobody would print twelve shirts</h2>
+        <p>
+          <span class="tbd">[Owner name]</span> has been
+          <span class="tbd">[designing / printing]</span> in the Twin Cities for
+          <span class="tbd">[X years]</span>.
+        </p>
+        <p>
+          MP Design Lab exists for the orders that get turned away: twelve for a
+          family reunion, six for a new landscaping crew, one for your dad's
+          birthday. The big printers aren't built for those, and the online ones
+          won't touch your artwork &mdash; they just print whatever you upload and
+          let you find out later that it came out pixelated.
+        </p>
+        <p>
+          Every order gets a real mockup from a real person before it goes to press.
+          If the design isn't right yet, we keep working on it until it is. That's
+          the whole business.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-in">
+      <div>
+        <div class="ftr-mark">MP Design Lab</div>
+        <p>
+          Custom apparel &middot; Twin Cities, MN<br>
+          Wear your imagination.
+        </p>
+      </div>
+      <div>
+        <div class="ftr-mark">Get in touch</div>
+        <p>
+          <span class="tbd">[phone]</span><br>
+          <span class="tbd">[email]</span><br>
+          <span class="tbd">[@instagram]</span>
+        </p>
+      </div>
+      <div>
+        <div class="ftr-mark">Pickup</div>
+        <p>
+          <span class="tbd">[street address]</span><br>
+          <span class="tbd">[neighborhood, MN ZIP]</span><br>
+          <span class="tbd">[hours]</span>
+        </p>
+      </div>
+      <div>
+        <div class="ftr-mark">Serving</div>
+        <p>
+          Minneapolis &middot; St. Paul<br>
+          Bloomington &middot; Woodbury &middot; Maple Grove<br>
+          Shipping nationwide
+        </p>
+      </div>
+    </div>
+    <p class="legal">
+      &copy; <span id="yr">2026</span> MP Design Lab. All rights reserved. &mdash;
+      We can't reproduce licensed marks (college, NFL, NHL, MLB team logos), but we
+      can design you something original in the same spirit. Just ask.
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var y = document.getElementById("yr");
+    if (y) { y.textContent = String(new Date().getFullYear()); }
+
+    var form = document.getElementById("quoteForm");
+    var sent = document.getElementById("quoteSent");
+    if (form && sent) {
+      form.addEventListener("submit", function (e) {
+        // Once a real endpoint replaces the placeholder in the form's action,
+        // stop intercepting and let the browser submit it normally.
+        var action = form.getAttribute("action") || "";
+        if (action && action.indexOf("PASTE-YOUR-FORM-ENDPOINT") === -1) { return; }
+        e.preventDefault();
+        sent.hidden = false;
+        sent.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var id = a.getAttribute("href");
+        if (!id || id === "#") { return; }
+        var t = document.querySelector(id);
+        if (!t) { return; }
+        e.preventDefault();
+        t.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
