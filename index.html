@@ -73,6 +73,8 @@
     --tbd-bg:#FFF3D6;
     --tbd-line:#C98A00;
     --tbd-text:#6B4A00;
+    /* muted text ON the inverted ink band — must flip with the theme */
+    --band-sub:#9B9EA8;
 
     --display:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
     --body:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -95,6 +97,7 @@
       --tbd-bg:#3A2E10;
       --tbd-line:#D8A83A;
       --tbd-text:#F2D99A;
+    --band-sub:#5A5C63;
     }
   }
   :root[data-theme="dark"]{
@@ -111,6 +114,7 @@
     --tbd-bg:#3A2E10;
     --tbd-line:#D8A83A;
     --tbd-text:#F2D99A;
+    --band-sub:#5A5C63;
   }
 
   *{box-sizing:border-box}
@@ -146,6 +150,8 @@
   .dots i:nth-child(2){background:var(--m)}
   .dots i:nth-child(3){background:var(--y)}
   .dots i:nth-child(4){background:var(--k)}
+  /* the black dot would vanish on the ink-ground hero and band */
+  .hero .dots i:nth-child(4),.band .dots i:nth-child(4){background:#FFFFFF}
 
   /* ---- header ---- */
   .hdr{
@@ -156,10 +162,13 @@
   }
   .hdr-in{display:flex;align-items:center;gap:20px;min-height:64px}
   .mark{
-    font-family:var(--display);font-weight:900;font-size:15px;
-    letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+    font-family:var(--display);font-weight:900;
+    font-size:clamp(12px,3.1vw,15px);
+    letter-spacing:.13em;text-transform:uppercase;text-decoration:none;
     display:flex;align-items:center;gap:10px;margin-right:auto;
+    white-space:nowrap;
   }
+  @media (max-width:420px){.mark .dots{display:none}}
   .nav{display:flex;gap:26px;align-items:center}
   .nav a{
     font-family:var(--display);font-size:11.5px;font-weight:600;
@@ -324,7 +333,7 @@
   }
   @media (max-width:780px){.band .band-in{grid-template-columns:1fr}}
   .band h2{font-size:clamp(24px,3.4vw,36px);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;color:var(--paper)}
-  .band p{margin-top:12px;color:var(--ink-soft);max-width:54ch;font-size:16.5px}
+  .band p{margin-top:12px;color:var(--band-sub);max-width:54ch;font-size:16.5px}
   .band .btn-a{background:var(--paper);color:var(--ink)}
   .band .btn-a:hover{background:var(--accent);color:var(--accent-ink)}
 
