@@ -374,6 +374,16 @@
   @media (prefers-reduced-motion:reduce){
     *{animation-duration:.001ms!important;transition-duration:.001ms!important}
   }
+
+  /* printing / save-as-PDF: keep the ink-ground sections black */
+  @page{margin:.4in}
+  @media print{
+    html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .hdr{position:static}
+    .hdr-cta{display:none}
+    .band,.callout,.whocard,.step{break-inside:avoid}
+    a{text-decoration:none}
+  }
 </style>
 </head>
 <body>
